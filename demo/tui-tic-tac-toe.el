@@ -52,7 +52,7 @@
 (tui-define-component tui-tic-tac-toe-game
   :documentation "A demo implementation of Tic-Tac-Toe.
 
-Basedon on Dan Abramov's Tic-Tac-Toe tutorial for React at https://codepen.io/gaearon/pen/gWWZgR?editors=0010."
+Based on Dan Abramov's Tic-Tac-Toe tutorial for React at https://codepen.io/gaearon/pen/gWWZgR?editors=0010."
   :state-documentation
   (:history "Representation of the current board state and the board state of all previous turns in the current game."
             :x-is-next "Truthy if 'X' is the next player to play.")
@@ -72,7 +72,7 @@ Basedon on Dan Abramov's Tic-Tac-Toe tutorial for React at https://codepen.io/ga
           :y 3
           :width 11
           :height 9
-          :squares (copy-list current))
+          :squares (cl-copy-list current))
          (tui-div
           :x 17
           :y 2
